@@ -3,6 +3,8 @@ const hbs = require('hbs');
 
 var app = express();
 
+const herokuport = process.env.port || 8050;
+
 //set up a a view engine for dynamic page
 
 
@@ -77,6 +79,6 @@ app.get('/bad', (req, res) => {
 
 
 });
-app.listen(8050, () => {
+app.listen(herokuport, () => {
     console.log("server is up and running");
 });
