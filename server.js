@@ -49,8 +49,8 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
 
         currentyear: new Date().getFullYear(),
-        location: "Kolkata",
-        welcome: "welcome to my webapp"
+        location: "Kolkata-TCS",
+        welcome: "welcome to Kolkata TCS"
     });
 
 
